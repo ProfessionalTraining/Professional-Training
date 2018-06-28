@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>注册</title>
+        <link rel="stylesheet" href="regist.css" type="text/css" />
+        <script src="regist.js"></script>
+    </head>
+    <body>
+        <div class="content">
+            <div class="returnlogo">
+                <img src="logo.png" alt="今日头条" onclick="window.location.href='index.html'" style="width: 108px; height: 27px;">
+            </div>
+            <div class="registtext">
+                <img src="registtitle.png" alt="">
+            </div>
+            <div class="loginbox">
+                <input id="username" type="text" class="registusername" placeholder="  用户名">
+                <input id="password" type="password" class="registusername" placeholder="  密码">
+                <input id="checkpassword" type="password" class="registusername" placeholder="  确认密码">
+                <input id="phonenumber" type="text" class="registusername" placeholder="  手机号码">
+                <div class="varify">
+                    <input id="varification" type="text" class="registvarify" placeholder="  手机验证码">
+                    <button id="varifybtn" type="button" class="varification" onclick="getvarifycode()">获取验证码</button>
+                </div>
+                <button id="registbtn" type="button" class="registbtn" onclick="registfunc()">注册</button>
+                <p id="alertion" class="alertion"></p>
+            </div>
+        </div>
+    </body>
+</html>

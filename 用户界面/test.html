@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>测试</title>
+        <script type="text/javascript" src="jquery-3.3.1.js"></script>
+        <link rel="stylesheet" href="css.css" type="text/css" />
+    </head>
+    <body>
+        <div>
+            <div class="header">
+                
+            </div>
+            <div class="bodyer">
+                <div class="navigation">
+                    <div class="logo">
+                        <img src="logo.png" alt="今日头条" style="width: 108px; height: 27px;">
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="" class="channel-item active">
+                                <span>推荐</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="channel-item">
+                                <span>热点</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="channel-item">
+                                <span>图片</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="channel-item">
+                                <span>科技</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="channel-item">
+                                <span>娱乐</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="channel-item">
+                                <span>游戏</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="news">
+                    <div class="thumbnail">
+                        <ul id="photoul" class="pic">
+                            <li id="photo1" class="slide-item slide-item-active">
+                                <img src="new1.jpg">
+                                <p>日本大阪6.1级地震 房屋倒塌新干线停运</p>
+                            </li>
+                            <li id="photo2" class="slide-item">
+                                <img src="new2.jpg">
+                                <p>患癌女孩的愿望</p>
+                            </li>
+                        </ul>
+                        <ul class="nav">
+                            <li class="slide-tab-item active">
+                                要闻
+                            </li>
+                            <li class="slide-tab-item">
+                                社会
+                            </li>
+                            <li class="slide-tab-item">
+                                娱乐
+                            </li>
+                            <li class="slide-tab-item">
+                                体育
+                            </li>
+                            <li class="slide-tab-item">
+                                军事
+                            </li>
+                            <li class="slide-tab-item">
+                                明星
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p id="demo"></p>
+        </div>
+        <script>
+            window.onload=function(){
+                var photo=1;
+                function show(){
+                    var c=document.getElementById("photoul");
+                    var children=c.childNodes;
+                    var text="";
+                    for(var i=0;i<children.length;++i){
+                        text+=children[i].nodeName+"<br>";
+                    }
+                    alert(text);
+                }
+                show();
+            }
+        </script>
+    </body>
+</html>
